@@ -1,0 +1,338 @@
+:root{
+    --background: #dcf3d4;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.my-navbar{
+    font-family: Helvetica;
+    background-color: #bb1717;
+    padding: 2.3rem 1rem;
+    color: white;
+}
+
+.button{
+    text-decoration: none;
+    color:currentColor;
+}
+
+.button:hover{
+    color: currentColor;
+}
+
+.website-brand{
+    font-size: 3rem;
+    font-weight:lighter;
+    font-family: 'Pacifico', cursive;
+    user-select: none;
+}
+
+
+.search-block{
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#search-bar{
+    width: 100%;
+    padding: 4px 2px;
+}
+
+#results{
+    width: 100%;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    right: 0;
+    text-align: center;
+}
+
+.dropdown-results{
+    display: block;
+    width: 100%;
+}
+
+.dropdown-item{
+   word-break: break-word;
+   white-space: normal;
+   padding: .25rem 0.5rem;
+}
+
+.search-img{
+    max-width: 30px;
+}
+
+#no-result{
+    pointer-events: none;
+}
+
+.user-block{
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2rem;
+}
+
+.user-auth{
+    padding:  5px;
+    margin-right: 3px;
+}
+
+.user-name{
+    padding: 5px 8px;
+}
+
+@media(max-width:767px){
+    .website-brand{
+        text-align: left;
+    }
+
+    .search-block{
+        text-align: center;
+        width: 90%;
+        margin-top: 2rem;
+        left: 5%;
+    }
+
+    .user-block{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:575px){
+    .user-block{
+        text-align: center;
+    }
+    .website-brand{
+        text-align: center;
+    }
+}
+
+/* ------------------- HOME PAGE --------------------- */
+
+.home-page-body{
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed; 
+    padding-bottom: 5%;
+}
+
+.filters{
+    background-color: var(--background);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.movie-card{
+    max-width: 868px;
+    background-color: var(--background);
+    padding: .5rem;
+    border: 1px darkred solid;
+}
+
+.movie-img{
+    max-height: 240px;
+    max-width: auto;
+}
+
+.movie-page-btn{
+    display: inline-block;
+    border: rgb(116, 43, 43) solid 1px;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background-color: #c6dbce;
+    width: 100%;
+}
+
+.movie-page-btn:hover{
+    background-color: #f18787;
+}
+
+.form-select{
+    border: 1px solid darkred;
+    border-radius: 0;
+}
+
+@media(max-width:767px){
+    .movie-card{
+        max-width: 500px;
+        text-align: center;
+    }
+    .movie-card h5{
+        margin-top: 0.4rem;
+    }
+
+}
+
+
+/* ----------------- MOVIE PAGE -----------------------*/
+
+.movie-page-body{
+    padding-bottom: 0;
+}
+
+.movie-block{
+    background-color: var(--background);
+}
+
+.img-block{
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.title-block{
+    border: darkred solid 2px;
+    border-radius: 15px;
+    background-color: #FFA299;
+    padding: 1rem 0.5rem;
+}
+
+.genre-block p{
+    display: inline-block;
+    font-size: 1.5rem;
+    border: darkred solid 2.5px;
+    border-radius: 30px;
+    padding: 0.5rem;
+    background-color: #FFA299;
+    margin-right: 0.3rem;
+}
+
+.summary-block{
+    font-size: 1.25rem;
+}
+
+.credit-block{
+    font-size: 1.25rem;
+    
+}
+
+@media(max-width:767px){
+    .rating-block{
+        text-align: right;
+    }
+
+    .video-block{
+        margin-top: 2%;
+    }
+}
+
+
+
+/*------------------------ LOGIN PAGE ----------------------------*/
+
+.login-page-body, .register-page-body, .fpassword-page-body{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed; 
+    color: white;
+}
+
+.login-contents, .register-contents, .fpassword-contents{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 45px;
+}
+
+.login-block, .register-block, .fpassword-block{
+    background-color: #bb1717;
+    width: 500px;
+    height: 100%;
+    padding: 40px 1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.brand-block-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-block{
+    background-color: white;
+    width: 180px;
+    max-width: 180px;
+    height: 180px;
+    align-items: center;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -90px;
+}
+
+.brand-block:hover{
+    box-shadow: 0px 0px 26px 1px rgba(255,0,0,0.72);
+}
+
+.brand-block .website-brand{
+    color: black;
+    font-size: 40px;
+}
+
+.login-form, .register-form, .fpassword-form{
+    color: white;
+    margin-top: 74px;
+    padding-bottom: 3%;
+}
+
+.form-input{
+    width: 50%;
+}
+
+.form-input:focus{
+    width: 80%;
+}
+
+.login-btn, .register-btn, .fpassword-btn{
+    color: black;
+    border: white 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.login-btn:hover, .register-btn:hover, .fpassword-btn:hover{
+    color: black;
+    border: black 1px solid;
+}
+
+.fa-user, .fa-key, .fa-envelope{
+    border: white 1px solid;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.message-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.other-links hr{
+    padding-top: 2px;
+    margin-top: 40px;
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
